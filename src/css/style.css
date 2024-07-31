@@ -1,0 +1,92 @@
+.banner-initial {
+  background-image: url(../assets/images/banner-initial.png);
+  background-attachment: fixed;
+  background-color: black;
+}
+
+button .collapsed::after {
+  content: "+";
+}
+
+.grow-cast {
+  background-image: url(../assets/images/growcast-01.png);
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 94.1vh;
+}
+
+.home-growcast {
+  height: 90%;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 992px) {
+  .card img {
+    transition: 0.2s ease;
+  }
+
+  .card button {
+    opacity: 0;
+    transition: 0.5s ease;
+    transform: scale(0.9);
+  }
+
+  .card:hover img {
+    transform: scale(0.9);
+  }
+
+  .card:hover p {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  .card:hover button {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#backToTopBtn {
+  display: none;
+  /* Esconde o botão inicialmente */
+  position: fixed;
+  /* Fixa o botão na posição */
+  bottom: 20px;
+  /* Distância da parte inferior */
+  right: 20px;
+  /* Distância da parte direita */
+  z-index: 99;
+  /* Coloca o botão na frente de outros elementos */
+  border: none;
+  /* Remove borda */
+  outline: none;
+  /* Remove contorno */
+  color: white;
+  /* Cor do texto branca */
+  cursor: pointer;
+  /* Mostra o cursor de ponteiro ao passar sobre o botão */
+  padding: 15px;
+  /* Espaçamento interno do botão */
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  font-size: 18px;
+  /* Tamanho da fonte */
+}
+
+#backToTopBtn:hover {
+  background-color: #555;
+  /* Muda a cor de fundo ao passar o mouse */
+}
+
+.modal {
+  background-color:black;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+
+}
